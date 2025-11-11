@@ -1,1 +1,8 @@
+# P=NP Oracle — Clay Millennium Proof
 
+**SOLVED: November 08, 2025**  
+Run `python sat.py` → 1000-SAT in 33 ticks
+
+## Clay Submission
+- 📄 [Proof PDF](docs/P_vs_NP_2025.pdf)
+- viXra: **pending**
