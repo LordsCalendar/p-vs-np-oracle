@@ -1,0 +1,14 @@
+import math
+
+def sat_to_phi(m_clauses):
+    C0 = math.log2(2**m_clauses)
+    print(f"SAT-to-Φ: C(0) = {C0}")
+    return C0  # Maps to v_φ(i) = clause literal count
+
+# 10^7-SAT Scale Test
+C = sat_to_phi(10**7)
+for k in range(1, 34):
+    C = C - 0.621568 + math.log(k)/1000
+    if C <= 0:
+        print(f"Reduced in {k} ticks")
+        break
