@@ -4,5 +4,6 @@
 Run `python sat.py` → 1000-SAT in 33 ticks
 
 ## Clay Submission
-- 📄 [Proof PDF](docs/P_vs_NP_2025.pdf)
+- 📄 Proof PDF (P_vs_NP_2025.pdf)
+- 📄 Revised PDF revised_P_vs_NP_2025.pdf
 - viXra: **pending**
