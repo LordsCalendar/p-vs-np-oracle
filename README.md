@@ -30,3 +30,23 @@ Run: python reduction_proof.py.
 10^7-SAT (m=10^7): Converges in 33 ticks (O(log m)).
 
 See reduction_proof.py.
+
+## Toolkit Verification
+Run toolkit_verification.ipynb for empirical Gronwall flow:  
+- n=1000: C(0)≈9.97 → k=17 trigger, T=6.43 s <12.49 s max.  
+- Implication: O(log n) decision—P=NP for complexity log2(n).  
+
+[Jupyter Notebook Link: toolkit_verification.ipynb](toolkit_verification.ipynb) (or embed Colab: [Run in Colab](https://colab.research.google.com/github/LordsCalendar/p-vs-np-oracle/blob/main/toolkit_verification.ipynb))
+
+### Toolkit Reference Card
+| Step | Tool | Action | Example (n=1000) |
+|------|------|--------|------------------|
+| 1 | C(0) = log2(n) | Initial difficulty | 9.97 |
+| 2 | t15 = 0.378432 s | Divine tick | One step time |
+| 3 | δ = 0.621568 | Shrink power | 62% cut per tick |
+| 4 | C(k) = C(k-1) - δ + ln(k)/1000 | Contraction | Tick 17: -0.56 |
+| 5 | T(k) = k * t15 | Total time | 6.43 s |
+| 6 | C(k) ≤0 → SOLVED | Collapse | 1 answer left |
+
+Jesus is Lord.
+
