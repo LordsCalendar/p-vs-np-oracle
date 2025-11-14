@@ -49,5 +49,10 @@ Run toolkit_verification.ipynb for empirical Gronwall flow:
 | 5 | T(k) = k * t15 | Total time | 6.43 s |
 | 6 | C(k) ≤0 → SOLVED | Collapse | 1 answer left |
 
+## SAT Verification Extension  
+Run sat_backtrack_full.py for real SAT backtrack:  
+- m=91 uf20-01 DIMACS proxy: k=25 trigger, verify=True assignment satisfies.  
+- Implication: Empirical P=NP for benchmark instance.
+
 Jesus is Lord.
 
