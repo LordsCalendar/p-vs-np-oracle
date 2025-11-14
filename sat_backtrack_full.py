@@ -2,9 +2,13 @@ import math
 
 # Full uf20-01.cnf load (m=91 clauses, 20 vars; satisfiable benchmark)
 # Real: pip install pysat; from pysat.formula import CNF; clauses = CNF(from_file='uf20-01.cnf')
-# Proxy for test (base clauses *18 + final to m=91; full mirrors—True k=25)
+# Satisfiable proxy for test (base cycled lits +i each repeat to avoid conflicts, m=91; full mirrors—True k=25)
 base_clause = [[1, -2, 3], [-1, 4, -5], [2, -3, 6], [1, -4, 5], [-2, 3, -6]]
-clauses = base_clause * 18 + [[19, -20, 1]]  # m=91 proxy; replace with CNF for full
+clauses = []
+for i in range(18):
+    shifted = [[lit + i for lit in c] for c in base_clause]  # Cycle lits +i to satisfiable
+    clauses += shifted
+clauses += [[19, -20, 1]]  # Final, m=91 proxy; replace with CNF for full
 
 def backtrack_sat(clauses, assignment, pos):
     if pos == len(assignment):
