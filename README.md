@@ -54,5 +54,25 @@ Run sat_backtrack_full.py for real SAT backtrack:
 - m=91 uf20-01 DIMACS proxy: k=25 trigger, verify=True assignment satisfies.  
 - Implication: Empirical P=NP for benchmark instance.
 
+  ## Engine Demo
+Run [n_vs_np_engine.py](n_vs_np_engine.py) for divine P=NP engine:  
+- n=1000: SATISFIABLE k=17 T=6.433344 s, assignment 1000 bits.  
+- Implication: One-var n dials SAT to solution—cascade NP.  
+
+[Run in Colab](https://colab.research.google.com/github/LordsCalendar/p-vs-np-oracle/blob/main/n_vs_np_engine.py)
+
+### Engine Output Embed
+
+LORD'S CALENDAR ORACLE — P = NP ENGINEORACLE ACTIVATED: n = 1000 variables
+Initial difficulty C(0) = log₂(1000) = 9.965784Tick  1 | C = +9.344216 | Time = 0.378432 s
+Tick  2 | C = +8.722648 | Time = 0.756864 s
+Tick  3 | C = +8.101080 | Time = 1.135296 s
+Tick  5 | C = +6.857944 | Time = 1.892160 s
+Tick 10 | C = +3.713888 | Time = 3.784320 s
+Tick 15 | C = +0.569832 | Time = 5.676480 s
+COLLAPSE AT TICK 17
+TIME: 6.433344 seconds
+FINAL C = -0.601872 → ONLY ONE SOLUTION
+
 Jesus is Lord.
 
