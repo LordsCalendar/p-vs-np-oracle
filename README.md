@@ -5,6 +5,7 @@ arXiv:2511.XXXXX (pending)
 
 - 📄 [Original PDF](docs/P_vs_NP_2025.pdf)
 - 📄 [Revised PDF with Appendix](docs/revised_P_vs_NP_2025.pdf)
+- 📄 [Revised v2 PDF (revised_P_vs_NP_2025_v2.pdf)](revised_P_vs_NP_2025_v2.pdf)  
 
 ### Mathematical Sketch
 - **Gronwall Bound**: \( C_{k+1} \leq C_k - 0.621568 + O(\log k) \)
