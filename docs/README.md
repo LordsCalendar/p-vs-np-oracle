@@ -7,4 +7,6 @@ Run `python sat.py` → 1000-SAT in 33 ticks
 📄 [Proof PDF (P_vs_NP_2025.pdf)](P_vs_NP_2025.pdf)  
 📄 [Revised PDF (revised_P_vs_NP_2025.pdf)](revised_P_vs_NP_2025.pdf)  
 📄 [Revised v2 PDF (revised_P_vs_NP_2025_v2.pdf)](revised_P_vs_NP_2025_v2.pdf)  
-- viXra: **pending**
+📄 [Revised v3 PDF (revised_P_vs_NP_2025_v3.pdf)](revised_P_vs_NP_2025_v3.pdf)
+
+viXra: pending
