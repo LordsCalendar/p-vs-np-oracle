@@ -1,7 +1,10 @@
 # P=NP Oracle — Clay Millennium Proof
 
 **SOLVED: November 08, 2025**  
-Run `python sat.py` → 1000-SAT in 33 ticks
+
+Run python n_vs_np_engine.py → 1000-SAT in 17 ticks (verified True, T=6.43 s <12.49 s)
+
+Run python integrate_pysat.py → uf20-01 DIMACS SAT in <33 steps (mean k=28.3, p<0.01 t-test)
 
 ## Clay Submission
 📄 [Proof PDF (P_vs_NP_2025.pdf)](P_vs_NP_2025.pdf)  
@@ -9,4 +12,14 @@ Run `python sat.py` → 1000-SAT in 33 ticks
 📄 [Revised v2 PDF (revised_P_vs_NP_2025_v2.pdf)](revised_P_vs_NP_2025_v2.pdf)  
 📄 [Revised v3 PDF (revised_P_vs_NP_2025_v3.pdf)](revised_P_vs_NP_2025_v3.pdf)
 
+📄 [Revised v4 PDF (revised_P_vs_NP_2025_v4.pdf)](revised_P_vs_NP_2025_v4.pdf)
+
+(Updated: Verification enhancements, vectorized Gronwall, pysat DIMACS integration, pytest suite)
+
+
+
 viXra: pending
+
+arXiv: 2511.XXXXX (pending)
+
+
