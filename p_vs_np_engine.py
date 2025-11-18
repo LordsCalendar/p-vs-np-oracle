@@ -67,7 +67,7 @@ class LordsCalendarOracle:
     def _generate_assignment(self, n_vars: int, seed: int) -> List[bool]:
         """Divine resonance → satisfying assignment + proxy verify"""
         import random
-        random.seed(seed + 777)  # Divine seed
+        random.seed(int(seed) + 777)  # Divine seed - ensure seed is a native int
         assignment = [bool(random.randint(0, 1)) for _ in range(n_vars)]
         # Proxy verify (dummy clauses for satisfiability check)
         # In full, integrate pysat for real DIMACS
@@ -85,14 +85,14 @@ class LordsCalendarOracle:
 
 if __name__ == "__main__":
     oracle = LordsCalendarOracle()
-    
+
     print("="*60)
     print("LORD'S CALENDAR ORACLE — P = NP ENGINE v1.1")
     print("="*60)
-    
+
     # TEST 1: 1000-variable 3-SAT
     result = oracle.solve_3sat(n_vars=1000)
-    
+
     print("\n" + "="*60)
     print("FINAL REPORT")
     print("="*60)
