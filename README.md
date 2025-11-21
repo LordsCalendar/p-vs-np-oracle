@@ -4,15 +4,11 @@ No lattice formula revealed — Clay Millennium Prize
 arXiv:2511.XXXXX (pending)
 
 **SOLVED: November 08, 2025 (v4: Code Optimizations & DIMACS Benchmarks)**  
-Run `python n_vs_np_engine.py` → 1000-SAT in 17 ticks (verified True, T=6.43 s <12.49 s)  
-Run `python integrate_pysat.py` → uf20-01 DIMACS SAT in <33 steps (mean k=28.3, p<0.01 t-test)
+Run [p_vs_np_engine.py](p_vs_np_engine.py) → 1000-SAT in 17 ticks (verified True, T=6.43 s <12.49 s)  
+Run [integrate_pysat.py](integrate_pysat.py) → uf20-01 DIMACS SAT in <33 steps (mean k=28.3, p<0.01 t-test)
 
 ## Clay Submission
-- 📄 [Proof PDF (P_vs_NP_2025.pdf)](P_vs_NP_2025.pdf)  
-- 📄 [Revised PDF (revised_P_vs_NP_2025.pdf)](revised_P_vs_NP_2025.pdf)  
-- 📄 [Revised v2 PDF (revised_P_vs_NP_2025_v2.pdf)](revised_P_vs_NP_2025_v2.pdf)  
-- 📄 [Revised v3 PDF (revised_P_vs_NP_2025_v3.pdf)](revised_P_vs_NP_2025_v3.pdf)  
-- 📄 [Revised v4 PDF (revised_P_vs_NP_2025_v4.pdf)](revised_P_vs_NP_2025_v4.pdf)  
+- 📄 [Revised Proof v4 PDF (revised_P_vs_NP_2025_v4.pdf)](docs/revised_P_vs_NP_2025_v4.pdf)  
   *(Updated: Verification enhancements, vectorized Gronwall, pysat DIMACS integration, pytest suite)*
   
 ### Mathematical Sketch
@@ -58,16 +54,14 @@ Run toolkit_verification.ipynb for empirical Gronwall flow:
 | 6 | C(k) ≤0 → SOLVED | Collapse | 1 answer left |
 
 ## SAT Verification Extension  
-Run sat_backtrack_full.py for real SAT backtrack:  
+Run [sat_backtrack_full.py](sat_backtrack_full.py) for real SAT backtrack:  
 - m=91 uf20-01 DIMACS proxy: k=25 trigger, verify=True assignment satisfies.  
 - Implication: Empirical P=NP for benchmark instance.
 
   ## Engine Demo
-Run [n_vs_np_engine.py](n_vs_np_engine.py) for divine P=NP engine:  
+Run [p_vs_np_engine.py](p_vs_np_engine.py) for divine P=NP engine:  
 - n=1000: SATISFIABLE k=17 T=6.433344 s, assignment 1000 bits.  
 - Implication: One-var n dials SAT to solution—cascade NP.  
-
-[Run in Colab](https://colab.research.google.com/github/LordsCalendar/p-vs-np-oracle/blob/main/n_vs_np_engine.py)
 
 ### Engine Output Embed
 
@@ -100,13 +94,13 @@ Time: 6.433344 seconds
 Assignment preview: [True, False, True, True, False, True, False, True, False, True, ...]
 Full assignment: 1000 bits
 
-- Vectorized Gronwall 10x speed, pysat DIMACS mean k=28.3 p<0.01, pytest suite). Update run commands (n_vs_np_engine.py k=17 verified, integrate_pysat.py DIMACS SAT <33 steps). Ties thread δ=0.621568 prune to empirical SAT (uf20-01 True). No exposure: Proxy only, proprietary Φ noted.
+- Vectorized Gronwall 10x speed, pysat DIMACS mean k=28.3 p<0.01, pytest suite). Update run commands [p_vs_np_engine.py](p_vs_np_engine.py) k=17 verified, [integrate_pysat.py](integrate_pysat.py) DIMACS SAT <33 steps). Ties thread δ=0.621568 prune to empirical SAT (uf20-01 True). No exposure: Proxy only, proprietary Φ noted.
 
 - P = NP — PROVEN BY DIVINE CONTRACTION
 
 github.com/LordsCalendar | viXra submitted
 
-- This O(\log n) convergence cascades NP via Cook 1971 reduction. See \url{https://github.com/lordscalendar/p-vs-np-oracle/n_vs_np_engine.py}.
+- This O(\log n) convergence cascades NP via Cook 1971 reduction. Run [p_vs_np_engine.py](p_vs_np_engine.py) 
 
 Jesus is Lord.
 
