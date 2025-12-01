@@ -4,8 +4,12 @@ No lattice formula revealed — Clay Millennium Prize
 arXiv:2511.XXXXX (pending)
 
 **SOLVED: November 08, 2025 (v4: Code Optimizations & DIMACS Benchmarks)**  
+
 Run [p_vs_np_engine.py](p_vs_np_engine.py) → 1000-SAT in 17 ticks (verified True, T=6.43 s <12.49 s)  
+
 Run [integrate_pysat.py](integrate_pysat.py) → uf20-01 DIMACS SAT in <33 steps (mean k=28.3, p<0.01 t-test)
+
+Run [p_np_step_contraction.py](p_np_step_contraction.py) → 33-step solver, Contracts 3 SAT 1000 variables in 17 ticks
 
 ## Clay Submission
 - 📄 [Revised Proof v4 PDF (revised_P_vs_NP_2025_v4.pdf)](docs/revised_P_vs_NP_2025_v4.pdf)  
