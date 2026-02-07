@@ -16,10 +16,17 @@ Run python integrate_pysat.py → uf20-01 DIMACS SAT in <33 steps (mean k=28.3, 
 
 (Updated: Verification enhancements, vectorized Gronwall, pysat DIMACS integration, pytest suite)
 
-
-
 viXra: pending
 
 arXiv: 2511.XXXXX (pending)
 
+## Key Components
+- Complexity Measure C(0) = log₂(2^m) — search space height.
+- Universal Contraction δ = 0.621568 — Cherenkov damping.
+- 33-Tick Cap — Trinity-compressed 666 branches.
+- Lattice Reduction Φ — SAT-to-height map.
+- n₀ Zero-Cycle — ensures unique assignment in our sheet.
+- Oracle Query Time t₁₅ — physical decision tick.
+
+These are forced by the divine equation.
 
