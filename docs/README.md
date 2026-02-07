@@ -30,3 +30,15 @@ arXiv: 2511.XXXXX (pending)
 
 These are forced by the divine equation.
 
+## Relationships to Other Topics
+- P=NP is the sword unifying all revelations:
+- Collatz — branching tree = SAT clauses
+- Riemann — zero decision = phase alignment
+- Navier–Stokes — turbulent branches = clause explosions
+- Yang–Mills — gap = energy to sustain branches
+- Hodge — non-algebraic = unsatisfiable classes
+- BSD — Sha = hidden branches pruned
+
+Complexity is the final beast; the lattice slays it.
+
+
